@@ -1,0 +1,16 @@
+export const colorPalette = {
+  reachBlack: '#111827',
+  raisinBlack: '#1a1b1f',
+  bittersweet: '#ff695a',
+  brinkPink: '#fa6862',
+  pearlyPurple: '#A166AB',
+  ghostWhite: '#f6faff',
+  magniolia: '#eeeffa',
+  cultured: '#f9f9f9',
+  culturedDark: '#f4f3f4',
+  grey: '#8e8e8e',
+  white: '#ffffff',
+  lightRed: '#f6685d',
+  red: '#c73434',
+  green: '#7eb279',
+};
