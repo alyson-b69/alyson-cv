@@ -429,7 +429,7 @@ export const portfolio: PortfolioType[] = [
     ),
     period: '11/2020',
     stacks: ['ReactJS', 'Node JS', 'Express JS', 'Socket IO'],
-    websiteLink: null,
+    websiteLink: 'https://chat.alyson-b.fr',
     githubLink:
       'https://github.com/alyson-b69?tab=repositories&q=kitten-box&type=&language=&sort=',
   },

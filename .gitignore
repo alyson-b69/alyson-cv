@@ -12,6 +12,7 @@
 /build
 
 # misc
+.idea
 .github
 .env
 .DS_Store

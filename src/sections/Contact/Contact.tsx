@@ -1,6 +1,6 @@
 import React, { FormEvent } from 'react';
 import { StyledSection, StyledContainer } from '../sections.style';
-import { FaRegAddressCard } from 'react-icons/fa';
+import { FaEnvelopeOpenText } from 'react-icons/fa';
 import Button from '../../components/Button';
 import axios, { AxiosError } from 'axios';
 import Input from '../../components/Input/Input';
@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
   const [error, setError] = React.useState<string | null>(null);
   const [success, setSuccess] = React.useState<boolean>(false);
 
-  const inputChange = (
+  const handleInputChange = (
     e:
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLTextAreaElement>,
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
     <StyledSection id={'contact'}>
       <StyledContainer>
         <h2>
-          <FaRegAddressCard fontSize="1.5em" />
+          <FaEnvelopeOpenText fontSize="1.5em" />
           Prenons Contact
         </h2>
         <h3>Besoin de plus d'infos ?</h3>
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
                 placeholder={'Votre nom'}
                 value={state.name}
                 type={'text'}
-                onChange={inputChange}
+                onChange={handleInputChange}
                 required
                 width={'100%'}
               />
@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
                 type={'email'}
                 placeholder={'Votre email'}
                 value={state.from}
-                onChange={inputChange}
+                onChange={handleInputChange}
                 required
                 width={'100%'}
               />
@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
                 type={'text'}
                 placeholder={`L'objet de votre message`}
                 value={state.subject}
-                onChange={inputChange}
+                onChange={handleInputChange}
                 required
                 width={'100%'}
               />
@@ -109,7 +109,7 @@ const Contact: React.FC = () => {
                 name={'message'}
                 placeholder={`Votre message`}
                 value={state.message}
-                onChange={inputChange}
+                onChange={handleInputChange}
                 required
                 width={'100%'}
               />

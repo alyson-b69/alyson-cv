@@ -77,7 +77,7 @@ export enum PortfolioProjectEnum {
   safecube = 'Plateforme Safecube',
   safecubeUI = 'Librairie Safecube UI',
   weather = 'Weather App',
-  kittenChat = 'Kitten-chat',
+  kittenChat = 'Kitten-box live chat',
   tips = 'Tips',
   sepsis = 'Sepsis',
   gamovore = 'Gamovore',
