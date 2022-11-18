@@ -15,6 +15,7 @@ import {
   FaGithub,
   FaCodepen,
 } from 'react-icons/fa';
+import { FiCodesandbox } from 'react-icons/fi';
 import spooky from '../../img/spooky.png';
 import TooltipQuote from '../../components/TooltipQuote';
 import Map from './Map';
@@ -44,6 +45,14 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
               >
                 <FaGithub fontSize="2em" />
+              </a>
+              <a
+                href="https://codesandbox.io/u/alyson-b69"
+                title="CodeSandBox Alyson"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiCodesandbox fontSize="2em" />
               </a>
               <a
                 href="https://www.linkedin.com/in/alyson-bernabeu-08249a172/"
