@@ -50,16 +50,18 @@ export interface CompetenceType {
   };
 }
 
-export interface ExperiencesType {
+export interface JobType {
+  title: string;
+  start: string;
+  end: string | null;
+  location: string;
+  description: React.ReactNode;
+  inverted: boolean;
+}
+
+export interface ExperienceType {
   year: number;
-  jobs: {
-    title: string;
-    start: string;
-    end: string | null;
-    location: string;
-    description: React.ReactNode;
-    inverted: boolean;
-  }[];
+  jobs: JobType[];
 }
 
 export interface FormationType {

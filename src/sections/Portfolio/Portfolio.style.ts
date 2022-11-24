@@ -154,8 +154,12 @@ export const InlineStacks = styled.div`
 `;
 
 export const ProjectDescription = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     max-height: 165px;
     overflow-y: scroll;
+
+    & strong {
+      color: ${theme.colors.accentTextColor};
+    }
   `}
 `;

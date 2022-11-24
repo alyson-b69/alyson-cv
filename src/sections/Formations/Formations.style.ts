@@ -1,15 +1,5 @@
 import styled, { css } from 'styled-components';
 
-export const StyledFormationContainer = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: ${theme.getSpacing(12)};
-    width: 100%;
-  `}
-`;
-
 export const FormationsBlock = styled.div`
   ${({ theme }) => css`
     display: flex;
@@ -22,9 +12,10 @@ export const FormationsBlock = styled.div`
   `}
 `;
 
-export const FormationRow = styled.div`
-  ${({ theme }) => css`
+export const FormationRow = styled.div<{ isEven: boolean }>`
+  ${({ theme, isEven }) => css`
     display: flex;
+    flex-direction: ${isEven ? 'row' : 'row-reverse'};
     min-height: ${theme.getSpacing(15)};
     gap: ${theme.getSpacing(2)};
   `}

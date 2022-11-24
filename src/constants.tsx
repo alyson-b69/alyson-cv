@@ -1,6 +1,6 @@
 import {
   CompetenceType,
-  ExperiencesType,
+  ExperienceType,
   FormationType,
   HardSkillEnum,
   IconsEnum,
@@ -129,7 +129,7 @@ export const competences: CompetenceType = {
   },
 };
 
-export const experiences: ExperiencesType[] = [
+export const experiences: ExperienceType[] = [
   {
     year: 2022,
     jobs: [
@@ -425,6 +425,10 @@ export const portfolio: PortfolioType[] = [
           Après avoir suivi un cours d'introduction aux web sockets au sein de
           la Wild, j'ai voulu pousser un peu plus loin l'apprentissage.
         </p>
+        <p>
+          <strong>Pour tester → </strong>
+          Id: guest@gmail.com - Mdp: Alyson-b69
+        </p>
       </>
     ),
     period: '11/2020',
@@ -446,6 +450,10 @@ export const portfolio: PortfolioType[] = [
           Le site permet de consulter tous les tips créés, et, après
           authentification, de créer des tips, de les mettre en favoris pour les
           retrouver facilement.
+        </p>
+        <p>
+          <strong>Pour tester → </strong>
+          Id: guest@gmail.com - Mdp: Alyson-b69
         </p>
       </>
     ),
@@ -506,6 +514,10 @@ export const portfolio: PortfolioType[] = [
           notemment les disponibilités de jeux), possibilité d'ajouter un jeu à
           sa liste de favoris et de voir les autres joueurs ayant aimé ce titre,
           puis de rentrer en contact avec eux via un chat.
+        </p>
+        <p>
+          <strong>Pour tester → </strong>
+          Id: alyson.bernabeu.test@gmail.com - Mdp: Choucroute69
         </p>
       </>
     ),

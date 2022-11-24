@@ -11,15 +11,17 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ about }) => {
   return (
     <StyledSection id={'about'}>
-      <Slide>
-        <StyledContainerAbout>
+      <StyledContainerAbout>
+        <Slide>
           <img src={alyson} alt={'alyson'} />
+        </Slide>
+        <Slide direction={'right'}>
           <div>
             <h2>À PROPOS</h2>
             {about}
           </div>
-        </StyledContainerAbout>
-      </Slide>
+        </Slide>
+      </StyledContainerAbout>
     </StyledSection>
   );
 };
