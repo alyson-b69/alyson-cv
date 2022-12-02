@@ -97,3 +97,12 @@ export interface PortfolioType {
   githubLink: string | null;
   img?: string;
 }
+
+export interface RecommendationType {
+  name: string;
+  job: string;
+  imgUrl: string;
+  relation: string;
+  date: string;
+  content: React.ReactNode;
+}

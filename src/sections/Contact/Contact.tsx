@@ -1,6 +1,6 @@
 import React, { FormEvent } from 'react';
 import { StyledSection, StyledContainer } from '../sections.style';
-import { FaEnvelopeOpenText } from 'react-icons/fa';
+import { MdContactMail } from 'react-icons/md';
 import Button from '../../components/Button';
 import axios, { AxiosError } from 'axios';
 import Input from '../../components/Input/Input';
@@ -41,7 +41,6 @@ const Contact: React.FC = () => {
       'https://alysonb-contact.herokuapp.com/send-email';
 
     axios
-      //.post('http://localhost:5001/send-email', { ...state })
       .post(apiURL, { ...state })
       .then((_) => {
         setSuccess(true);
@@ -61,7 +60,7 @@ const Contact: React.FC = () => {
     <StyledSection id={'contact'}>
       <StyledContainer>
         <h2>
-          <FaEnvelopeOpenText fontSize="1.5em" />
+          <MdContactMail fontSize="1.5em" />
           Prenons Contact
         </h2>
         <h3>Besoin de plus d'infos ?</h3>

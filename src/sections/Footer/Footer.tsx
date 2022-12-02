@@ -19,6 +19,7 @@ import { FiCodesandbox } from 'react-icons/fi';
 import spooky from '../../img/spooky.png';
 import TooltipQuote from '../../components/TooltipQuote';
 import Map from './Map';
+import Cv from '../Cv';
 
 const Footer: React.FC = () => {
   return (
@@ -79,6 +80,8 @@ const Footer: React.FC = () => {
                 <FaInstagram fontSize="2em" />
               </a>
             </IconsLine>
+
+            <Cv />
           </FooterCol>
           <FooterCol>
             <h3>Bonus</h3>

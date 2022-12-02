@@ -1,11 +1,10 @@
 import React from 'react';
-import { StyledSection, StyledContainer } from '../sections.style';
 import Button from '../../components/Button';
 import { FaRegAddressCard } from 'react-icons/fa';
 import Popup from '../../components/Popup';
 import { Document, Page, pdfjs } from 'react-pdf';
 import pdfFile from './cv.pdf';
-import { StyledPdf } from './Cv.style';
+import { StyledButtonContent, StyledPdf } from './Cv.style';
 import { AttentionSeeker } from 'react-awesome-reveal';
 
 const Cv: React.FC = () => {
@@ -16,23 +15,20 @@ const Cv: React.FC = () => {
   }, []);
 
   return (
-    <StyledSection id={'cv'}>
-      <StyledContainer>
-        <h2>
-          <FaRegAddressCard fontSize="1.5em" />
-          Curriculum vitae
-        </h2>
-        <h3>Mon CV au format PDF</h3>
-        <AttentionSeeker effect={'swing'}>
-          <Button
-            onClick={() => {
-              setOpen(true);
-            }}
-          >
-            Voir le PDF
-          </Button>
-        </AttentionSeeker>
-      </StyledContainer>
+    <>
+      <AttentionSeeker effect={'swing'} style={{ marginTop: '16px' }}>
+        <Button
+          onClick={() => {
+            setOpen(true);
+          }}
+        >
+          <StyledButtonContent>
+            <FaRegAddressCard fontSize="2em" />
+            Voir mon CV en PDF
+          </StyledButtonContent>
+        </Button>
+      </AttentionSeeker>
+
       <Popup
         open={open}
         close={() => setOpen(false)}
@@ -60,7 +56,7 @@ const Cv: React.FC = () => {
           },
         ]}
       />
-    </StyledSection>
+    </>
   );
 };
 

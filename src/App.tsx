@@ -8,6 +8,7 @@ import {
   experiences,
   formations,
   portfolio,
+  recommendations,
 } from './constants';
 import Intro from './sections/Intro';
 import About from './sections/About';
@@ -15,12 +16,12 @@ import Skills from './sections/Skills';
 import Experiences from './sections/Experiences';
 import Formations from './sections/Formations';
 import Portfolio from './sections/Portfolio';
-import Cv from './sections/Cv';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { WindowContextProvider } from './services/contexts/WindowContext';
 import Root from './components/Root';
+import Recommendations from './sections/Recommendations';
 
 const App: React.FC = () => {
   const contentRef = React.useRef<HTMLDivElement>(null);
@@ -43,8 +44,8 @@ const App: React.FC = () => {
           <Experiences experiences={experiences} />
           <Formations formations={formations} />
           <Portfolio projects={portfolio} />
-          <Cv />
           <Contact />
+          <Recommendations recommendations={recommendations} />
           <Footer />
           <ScrollToTop
             currentScroll={currentScroll}

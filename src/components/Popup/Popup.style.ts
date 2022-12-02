@@ -36,8 +36,8 @@ export const StyledPopup = styled(Popup)<{
         forwards;
 
       @media only screen and (max-width: ${theme.responsive.max}) {
-        width: 90%;
-        max-width: 90%;
+        // width: 90%;
+        // max-width: 90%;
         height: max-content;
         max-height: 90%;
       }

@@ -24,6 +24,12 @@ export const FooterCol = styled.div`
     gap: ${theme.getSpacing(4)};
     text-align: center;
     align-items: center;
+
+    & h3 {
+      display: flex;
+      align-items: center;
+      gap: ${theme.getSpacing(3)};
+    }
   `}
 `;
 
@@ -160,6 +166,10 @@ export const StyledMap = styled.div`
     & .leaflet-div-icon {
       background: transparent;
       border: none;
+    }
+
+    & .leaflet-bottom {
+      z-index: 400;
     }
 
     & .leaflet-popup-close-button span {
