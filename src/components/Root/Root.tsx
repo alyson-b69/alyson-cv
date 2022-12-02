@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledApp, StyledContent } from './Root.style';
 import NavBar from '../NavBar/NavBar';
-import { links } from '../../constants';
+import { links } from '../../datas';
 
 interface RootProps {
   children: React.ReactNode;

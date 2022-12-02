@@ -16,10 +16,10 @@ import { Fade, Zoom } from 'react-awesome-reveal';
 import useIsMobile from '../../services/hooks/useIsMobile';
 
 interface CompetencesProps {
-  competences: CompetenceType;
+  skills: CompetenceType;
 }
 
-const Skills: React.FC<CompetencesProps> = ({ competences }) => {
+const Skills: React.FC<CompetencesProps> = ({ skills }) => {
   const isMobile = useIsMobile();
   return (
     <StyledSection id={'skills'}>
@@ -31,7 +31,7 @@ const Skills: React.FC<CompetencesProps> = ({ competences }) => {
         </h2>
         <h3>Soft Skills</h3>
         <SoftSkillsContainer>
-          {competences.softSkills.map((skill, i) => {
+          {skills.softSkills.map((skill, i) => {
             const isEven = i % 2 === 0;
             return (
               <Fade duration={3000} key={skill.name}>
@@ -58,7 +58,7 @@ const Skills: React.FC<CompetencesProps> = ({ competences }) => {
               <h4>Languages</h4>
             </StyledHardSkillCard>
             <Zoom>
-              {competences.hardSkills.languages.map((skill) => {
+              {skills.hardSkills.languages.map((skill) => {
                 return (
                   <StyledHardSkillCard key={skill}>
                     {renderHardSkillImg(skill)}
@@ -73,7 +73,7 @@ const Skills: React.FC<CompetencesProps> = ({ competences }) => {
               <h4>Frameworks & librairies</h4>
             </StyledHardSkillCard>
             <Zoom>
-              {competences.hardSkills.frameworks.map((skill) => {
+              {skills.hardSkills.frameworks.map((skill) => {
                 return (
                   <StyledHardSkillCard key={skill}>
                     {renderHardSkillImg(skill)}
@@ -88,7 +88,7 @@ const Skills: React.FC<CompetencesProps> = ({ competences }) => {
               <h4>Outils</h4>
             </StyledHardSkillCard>
             <Zoom>
-              {competences.hardSkills.tools.map((skill) => {
+              {skills.hardSkills.tools.map((skill) => {
                 return (
                   <StyledHardSkillCard key={skill}>
                     {renderHardSkillImg(skill)}

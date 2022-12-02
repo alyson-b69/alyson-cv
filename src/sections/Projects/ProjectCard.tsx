@@ -1,5 +1,5 @@
 import React from 'react';
-import { PortfolioType } from '../../types';
+import { ProjectType } from '../../types';
 import {
   ImageWrapper,
   InlineIcons,
@@ -7,8 +7,8 @@ import {
   ProjectDescription,
   ProjectWrapper,
   StyledEffect,
-  StyledPortfolioCard,
-} from './Portfolio.style';
+  StyledProjectCard,
+} from './Projects.style';
 import Tag from '../../components/Tag';
 import { FaGithub } from 'react-icons/fa';
 import { BsWindow } from 'react-icons/bs';
@@ -17,14 +17,14 @@ import MacMockup from '../../img/mac-mockup.webp';
 import Button from '../../components/Button';
 
 interface PortfolioCardProps {
-  project: PortfolioType;
+  project: ProjectType;
   revert: boolean;
 }
 
-const PortfolioCard: React.FC<PortfolioCardProps> = ({ project, revert }) => {
+const ProjectCard: React.FC<PortfolioCardProps> = ({ project, revert }) => {
   return (
     <StyledEffect direction={revert ? 'left' : 'right'} key={project.name}>
-      <StyledPortfolioCard revert={revert}>
+      <StyledProjectCard revert={revert}>
         <ProjectWrapper revert={revert}>
           <h4>
             {project.name} <em>{project.type}</em>
@@ -63,9 +63,9 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project, revert }) => {
             </Button>
           ) : null}
         </ImageWrapper>
-      </StyledPortfolioCard>
+      </StyledProjectCard>
     </StyledEffect>
   );
 };
 
-export default PortfolioCard;
+export default ProjectCard;

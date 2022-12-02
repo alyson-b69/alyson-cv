@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const FormationsBlock = styled.div`
+export const TrainingBlock = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@ export const FormationsBlock = styled.div`
   `}
 `;
 
-export const FormationRow = styled.div<{ isEven: boolean }>`
+export const TrainingRow = styled.div<{ isEven: boolean }>`
   ${({ theme, isEven }) => css`
     display: flex;
     flex-direction: ${isEven ? 'row' : 'row-reverse'};
@@ -21,7 +21,7 @@ export const FormationRow = styled.div<{ isEven: boolean }>`
   `}
 `;
 
-export const FormationDescription = styled.div`
+export const TrainingDescription = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.lightTextColor};
     color: ${theme.colors.primaryTextColor};
@@ -40,7 +40,7 @@ export const FormationDescription = styled.div`
   `}
 `;
 
-export const FormationYear = styled.div`
+export const TrainingYear = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.disabledTextColor};
     color: ${theme.colors.lightTextColor};

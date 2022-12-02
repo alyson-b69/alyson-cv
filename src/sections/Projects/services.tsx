@@ -1,4 +1,4 @@
-import { PortfolioProjectEnum } from '../../types';
+import { ProjectNameEnum } from '../../types';
 import liora from '../../img/liora.png';
 import wallKingArt from '../../img/wallkingart.png';
 import gamovore from '../../img/gamovore.png';
@@ -9,77 +9,73 @@ import safecube from '../../img/safecube.png';
 import safecubeUI from '../../img/safecubeUI.png';
 import sepsis from '../../img/sepsis.png';
 
-export const renderImage = (projectName: PortfolioProjectEnum) => {
+export const renderImage = (projectName: ProjectNameEnum) => {
   switch (projectName) {
-    case PortfolioProjectEnum.lioraPicture:
+    case ProjectNameEnum.lioraPicture:
       return (
         <img
           src={liora}
-          alt={PortfolioProjectEnum.lioraPicture}
+          alt={ProjectNameEnum.lioraPicture}
           className={'project-img'}
         />
       );
-    case PortfolioProjectEnum.wallKingArt:
+    case ProjectNameEnum.wallKingArt:
       return (
         <img
           src={wallKingArt}
-          alt={PortfolioProjectEnum.wallKingArt}
+          alt={ProjectNameEnum.wallKingArt}
           className={'project-img'}
         />
       );
-    case PortfolioProjectEnum.gamovore:
+    case ProjectNameEnum.gamovore:
       return (
         <img
           src={gamovore}
-          alt={PortfolioProjectEnum.gamovore}
+          alt={ProjectNameEnum.gamovore}
           className={'project-img'}
         />
       );
-    case PortfolioProjectEnum.kittenChat:
+    case ProjectNameEnum.kittenChat:
       return (
         <img
           src={chat}
-          alt={PortfolioProjectEnum.kittenChat}
+          alt={ProjectNameEnum.kittenChat}
           className={'project-img'}
         />
       );
-    case PortfolioProjectEnum.weather:
+    case ProjectNameEnum.weather:
       return (
         <img
           src={weather}
-          alt={PortfolioProjectEnum.weather}
+          alt={ProjectNameEnum.weather}
           className={'project-img'}
         />
       );
-    case PortfolioProjectEnum.tips:
+    case ProjectNameEnum.tips:
       return (
-        <img
-          src={tips}
-          alt={PortfolioProjectEnum.tips}
-          className={'project-img'}
-        />
+        <img src={tips} alt={ProjectNameEnum.tips} className={'project-img'} />
       );
-    case PortfolioProjectEnum.safecube:
+    case ProjectNameEnum.safecube:
       return (
         <img
           src={safecube}
-          alt={PortfolioProjectEnum.safecube}
+          alt={ProjectNameEnum.safecube}
           className={'project-img'}
         />
       );
-    case PortfolioProjectEnum.safecubeUI:
+    case ProjectNameEnum.safecubeUI:
       return (
         <img
           src={safecubeUI}
-          alt={PortfolioProjectEnum.safecubeUI}
+          alt={ProjectNameEnum.safecubeUI}
           className={'project-img'}
         />
       );
-    case PortfolioProjectEnum.sepsis:
+    case ProjectNameEnum.sepsis:
       return (
         <img
           src={sepsis}
-          alt={PortfolioProjectEnum.sepsis}
+          alt={ProjectNameEnum.sepsis}
           className={'project-img'}
         />
       );

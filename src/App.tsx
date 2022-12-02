@@ -4,18 +4,18 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './theme/globalStyle';
 import {
   about,
-  competences,
+  skills,
   experiences,
-  formations,
-  portfolio,
+  training,
+  projects,
   recommendations,
-} from './constants';
+} from './datas';
 import Intro from './sections/Intro';
 import About from './sections/About';
 import Skills from './sections/Skills';
 import Experiences from './sections/Experiences';
-import Formations from './sections/Formations';
-import Portfolio from './sections/Portfolio';
+import Training from './sections/Training';
+import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -40,10 +40,10 @@ const App: React.FC = () => {
         >
           <Intro />
           <About about={about} />
-          <Skills competences={competences} />
+          <Skills skills={skills} />
           <Experiences experiences={experiences} />
-          <Formations formations={formations} />
-          <Portfolio projects={portfolio} />
+          <Training training={training} />
+          <Projects projects={projects} />
           <Contact />
           <Recommendations recommendations={recommendations} />
           <Footer />

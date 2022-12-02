@@ -64,18 +64,18 @@ export interface ExperienceType {
   jobs: JobType[];
 }
 
-export interface FormationType {
+export interface TrainingType {
   name: string;
   school: string;
   year: string;
 }
 
-export enum PortfolioTypeEnum {
+export enum ProjectTypeEnum {
   group = 'Projet de groupe',
   perso = 'Projet perso',
 }
 
-export enum PortfolioProjectEnum {
+export enum ProjectNameEnum {
   safecube = 'Plateforme Safecube',
   safecubeUI = 'Librairie Safecube UI',
   weather = 'Weather App',
@@ -87,9 +87,9 @@ export enum PortfolioProjectEnum {
   lioraPicture = 'Liora Picture',
 }
 
-export interface PortfolioType {
-  type: PortfolioTypeEnum;
-  name: PortfolioProjectEnum;
+export interface ProjectType {
+  type: ProjectTypeEnum;
+  name: ProjectNameEnum;
   period: string;
   description: React.ReactNode;
   stacks: string[];

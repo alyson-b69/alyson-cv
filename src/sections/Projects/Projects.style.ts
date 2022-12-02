@@ -6,7 +6,7 @@ export const StyledEffect = styled(Slide)`
   width: 100%;
 `;
 
-export const StyledPortfolioCard = styled.div<{ revert: boolean }>`
+export const StyledProjectCard = styled.div<{ revert: boolean }>`
   ${({ revert, theme }) => css`
     width: 100%;
     display: grid;
