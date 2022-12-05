@@ -22,6 +22,7 @@
     "typeRoots": ["./src/type"]
   },
   "include": [
-    "src"
+    "src",
+    "node_modules/@types/jest/index.d.ts"
   ]
 }

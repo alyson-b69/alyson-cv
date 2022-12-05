@@ -6,6 +6,7 @@ import {
   TrainingDescription,
 } from './Training.style';
 import { AttentionSeeker } from 'react-awesome-reveal';
+import { computeIsEven } from '../../services/data/utils';
 
 interface RenderTrainingProps {
   index: number;
@@ -13,7 +14,7 @@ interface RenderTrainingProps {
 }
 
 const RenderTraining: React.FC<RenderTrainingProps> = ({ training, index }) => {
-  const isEven = index % 2 === 0;
+  const isEven = computeIsEven(index);
   return (
     <AttentionSeeker key={training.name} effect={'rubberBand'}>
       <TrainingRow isEven={isEven}>

@@ -3,6 +3,7 @@ import { StyledSection, StyledContainer } from '../sections.style';
 import { ProjectType } from '../../types';
 import { FaRegFolderOpen } from 'react-icons/fa';
 import ProjectCard from './ProjectCard';
+import { computeIsEven } from '../../services/data/utils';
 
 interface ProjectsProps {
   projects: ProjectType[];
@@ -16,7 +17,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           <FaRegFolderOpen fontSize="1.5em" /> Projets
         </h2>
         {projects.map((project, i) => {
-          const revert = i % 2 === 0;
+          const revert = computeIsEven(i);
           return (
             <ProjectCard project={project} revert={revert} key={project.name} />
           );

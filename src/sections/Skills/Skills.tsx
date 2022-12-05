@@ -14,6 +14,7 @@ import TooltipQuote from '../../components/TooltipQuote';
 import { FaCode } from 'react-icons/fa';
 import { Fade, Zoom } from 'react-awesome-reveal';
 import useIsMobile from '../../services/hooks/useIsMobile';
+import { computeIsEven } from '../../services/data/utils';
 
 interface CompetencesProps {
   skills: CompetenceType;
@@ -32,7 +33,7 @@ const Skills: React.FC<CompetencesProps> = ({ skills }) => {
         <h3>Soft Skills</h3>
         <SoftSkillsContainer>
           {skills.softSkills.map((skill, i) => {
-            const isEven = i % 2 === 0;
+            const isEven = computeIsEven(i);
             return (
               <Fade duration={3000} key={skill.name}>
                 <TooltipQuote

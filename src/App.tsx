@@ -33,10 +33,7 @@ const App: React.FC = () => {
         <GlobalStyle />
         <Root
           contentRef={contentRef}
-          onScroll={(e) => {
-            const newScroll = e.currentTarget.scrollTop;
-            setCurrentScroll(newScroll);
-          }}
+          onScroll={(e) => setCurrentScroll(e.currentTarget.scrollTop)}
         >
           <Intro />
           <About about={about} />

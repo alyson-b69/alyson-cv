@@ -9,7 +9,7 @@ export const getDateTimeFromString = (date: string) => {
 };
 
 export const computePeriod = (start: string, end: string | null) => {
-  if (!end) {
+  if (!end || !start) {
     return '';
   }
 
